@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int n,reverse=0,d;
+	scanf("%d",&n);
+	while(n!=0)
+	{
+		d = n % 10;
+		reverse = reverse*10+d;
+		n = n / 10;
+	}
+	printf("The given number is palindrome",reverse);
+	return 0;
+}
